@@ -1,0 +1,2095 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    gap: 160px;
+    color: white;
+    cursor: pointer;
+    font-size: 2vw;
+    top: 0;
+    left: 0;
+}
+
+.tags {
+    color: white;
+}
+
+.intro-body-homepage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.intro-body-homepage-titlesContainer {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+    z-index: 1;
+    text-align: left;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    width: max-content;
+}
+
+.intro-body-homepage-titles-one,
+.intro-body-homepage-titles-two,
+.intro-body-homepage-titles-three {
+    grid-column: 1;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    white-space: nowrap;
+}
+
+.intro-body-homepage-titles-one {
+    color: rgb(208, 36, 36);
+    grid-row: 1;
+    padding-left: 35%;
+}
+
+.intro-body-homepage-titles-two {
+    grid-row: 2;
+}
+
+.intro-body-homepage-titles-three {
+    grid-row: 3;
+    padding-left: 24%;
+}
+
+.typewriter-container {
+    grid-row: 4;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    min-width: 600px;
+    color: rgb(208, 36, 36);
+}
+
+.intro-body-homepage-typed-text {
+    white-space: nowrap;
+    margin: 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.intro-body-homepage-typed-text::after {
+    content: '|';
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.home-image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.home-image-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 20%;
+    position: relative;
+    z-index: 0;
+    margin-top: -95px;
+}
+
+.home-image-portfolio-div {
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: auto;
+    height: auto;
+}
+
+.image-portfolio-intro {
+    height: 400px;
+    width: 400px;
+    max-width: none;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border: 3px solid white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.intro-body-homepage-buttonContainer {
+    color: white;
+    font-size: large;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    gap: 200px;
+}
+
+.about-body-homepage-buttonContainer{
+    color: white;
+    font-size: large;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    gap: 200px;
+}
+
+.about-button {
+    color: white;
+    background-color: rgb(208, 36, 36);
+    font-size: large;
+    width: 20%;
+    border-radius: 30px;
+    margin: 0;
+    padding: 20px 0;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.about-button:hover {
+    transform: translateY(-2px);
+    background-color: rgb(180, 30, 30);
+}
+
+
+
+.about-section-body-homepage-title {
+    font-size: 100px;
+    margin: 0; 
+    padding: 0; 
+    font-weight: bold;
+}
+
+.download-button {
+    color: white;
+    background-color: rgb(3, 3, 166);
+    font-size: large;
+    width: 20%;
+    border-radius: 30px;
+    margin: 0;
+    padding: 20px 0;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.download-button:hover {
+    transform: translateY(-2px);
+    background-color: rgb(2, 2, 140);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(32, 31, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 92px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* About Section Animation Styles */
+.about-section-body-homepage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+
+
+
+
+
+.skill-section-homePage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  margin-top: 300px; 
+}
+
+.skill-image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.home-image-background-skills {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 20%;
+    position: relative;
+    z-index: 0;
+    /* Remove margin-top if it exists */
+}
+
+.skill-body-homepage-titlesContainer {
+    position: absolute;
+    top: 12%;
+    left: 21%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+    z-index: 1;
+    text-align: left;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 30px;
+    width: max-content;
+}
+
+.skills-section-titles-one {
+    font-size: 100px;
+}
+
+.skills-section-titles-two {
+    color: red;
+    font-size: 25px;
+    margin-left: 200px;
+}
+
+.skill-section-homePage-container {
+    width: 100%;
+    height: 80%;
+   
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.skills-list{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 2 equal columns */
+  gap: 20px;                            
+  width: 100%;                           
+  
+  margin: 0 auto;        
+  flex: 1;
+  
+}
+
+.skills-list-items{
+    display: contents; /* Allows sections to participate in the grid layout */
+    
+}  
+
+.skills-list-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to top */
+    align-items: flex-start; /* Align items to left */
+    text-align: left;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* 50% opaque white */
+    
+    min-height: 120px;
+    padding: 10px;
+}
+
+.skills-list-numbers {
+    background-color: rgb(1, 1, 85);
+    color: white;
+    border-radius: 15px;
+    width: 40px; /* Use fixed width instead of percentage */
+    height: 40px; /* Use fixed height instead of percentage */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove any default margins */
+}
+
+.skills-list-text{
+    color: white;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+.speciality-section-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    margin-top: auto;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.speciality-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.speciality-section-line {
+    background-color: rgb(3, 3, 68);
+    height: 10px;
+    border-radius: 20px;
+    flex: 1;
+    max-width: calc(38% - 100px);
+}
+
+.left-line {
+    margin-right: 20px;
+}
+
+.right-line {
+    margin-left: 20px;
+}
+
+.speciality-section-title-container {
+    background-color: rgb(3, 3, 68);
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    margin: 0 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.speciality-section-title {
+    font-size: 5vh;
+    margin: 0; 
+    padding: 0; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Background image container - positioned behind everything */
+.speciality-image-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Behind all content */
+}
+
+.home-image-background-speciality {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 20%;
+}
+
+/* All content containers with higher z-index */
+.speciality-section-titles-one {
+    position: relative;
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+    z-index: 2; /* Above background */
+    text-align: center;
+    margin: 20px 0;
+    white-space: nowrap;
+}
+
+.speciality-section-detail-container {
+    width: 100%;
+    height: calc(100% - 120px);
+    position: relative;
+    z-index: 2; /* Above background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.speciality-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: 20px auto;
+    flex: 1;
+    position: relative;
+    z-index: 2; /* Above background */
+}
+
+.speciality-list-items {
+    display: contents;
+}
+
+.speciality-list-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    min-height: 120px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    z-index: 2; /* Above background */
+}
+
+.speciality-list-sections:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.speciality-list-numbers {
+    background-color: rgb(1, 1, 85);
+    color: white;
+    border-radius: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 16px;
+}
+
+.speciality-list-titles{
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.speciality-list-text {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.speciality-section-line-workHistory {
+    background-color: white;
+    height: 10px;
+    
+    grid-column: 1 / -1; /* Span all columns in the grid */
+    width: 80%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.work-history-title {
+    position: relative;
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+    z-index: 2;
+    text-align: center;
+    margin: 20px 0;
+    white-space: nowrap;
+    /* Remove any grid-specific positioning */
+    grid-column: unset;
+}
+
+
+.work-history-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    
+}
+
+.work-history-sections {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+ 
+    border-radius: 8px;
+}
+
+/* Alternate sections left and right */
+.work-history-sections:nth-child(odd) {
+    justify-self: start; /* Left align */
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.work-history-sections:nth-child(even) {
+    justify-self: end; /* Right align */
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.work-list-titles {
+    color: white; /* Full opacity white */
+    font-size: 40px;
+    margin: 0;
+    font-weight: 600;
+    position: relative;
+}
+
+.work-list-text {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+    line-height: 2;
+    width: 100%;
+    max-width: 800px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    position: relative; 
+}
+
+.speciality-list-titles-education{
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    font-weight: 600;
+}
+
+
+.download-button-workHistory{
+    color: white;
+    background-color: rgb(3, 3, 166);
+    font-size: medium;
+    
+    border-radius: 30px;
+    margin: 0;
+    padding: 20px 0;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.speciality-list-titles-CV{
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    font-weight: 600;
+}
+
+
+.download-button-workHistory-section{
+    color: white;
+    background-color: rgb(3, 3, 166);
+    font-size: xx-large;
+    width: 100%;
+    margin: 0;
+    
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px 15px;
+}
+
+
+
+.contact-container{
+       display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 100%;
+    
+    margin: 20px auto;
+}
+
+.Contact-section-body-homepage-title-container{
+    background-color: rgb(3, 3, 68);
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0 auto;
+    width: 100%;
+}
+
+.Contact-section-body-homepage-title{
+    font-size: 100px;
+    margin: 0; 
+    padding: 0; 
+    font-weight: bold;
+}
+
+.socials-contact-container {
+    max-width: 60%;
+    min-height: 50vh;
+    margin: 0 auto; /* This centers it horizontally */
+}
+
+.socials-contact-title{
+    font-size: 3vh;
+    color: white;
+}
+
+.socials-contact-sections-container {
+   
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-between; /* Evenly distributes space between sections */
+    align-items: flex-start; /* Changed from center to flex-start */
+    gap: 20px; /* Consistent gap between all sections */
+    padding: 0 20px; /* Add some padding on sides */
+}
+
+.linkdin-section-socials,
+.git-section-socials,
+.email-section-socials {
+    flex: 1; /* Each section takes equal width */
+    max-width: 200px; /* Optional: Set a max width */
+    height: 6vh;
+    margin-top: 0;
+}
+
+.linkdin-logo-contact{
+    height: 20px;
+}
+
+.linkdin-section-socials {
+    border-radius: 5px;
+    width: 17%;
+    height: 6vh;
+    margin-top: 20px;
+    background-color: rgb(10, 102, 194);
+    display: flex;
+    align-items: center; /* Vertically centers items */
+    gap: 10px; /* Adds space between logo and text */
+    padding: 0 15px;
+  }
+  
+  .linkdin-logo-contact {
+    height: 20px;
+    border-radius: 20px;
+  }
+
+  
+  
+  .linkdin-section-text a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+    display: inline; /* Ensure it stays inline */
+}
+
+.linkdin-section-text a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+  
+  .linkdin-section-text {
+    color: white;
+    margin: 0;
+  }
+
+
+.git-section-socials{
+    border-radius: 5px;
+    width: 17%;
+    height: 6vh;
+    margin-top: 20px;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    align-items: center; /* Vertically centers items */
+    gap: 10px; /* Adds space between logo and text */
+    padding: 0 15px;
+}
+
+
+.git-logo-contact{
+    height: 20px;
+    border-radius: 20px;
+}
+
+.git-section-text{
+    color: white;
+    margin: 0;
+}
+
+.git-section-text a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+    display: inline; /* Ensure it stays inline */
+}
+
+.git-section-text a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.email-section-socials{
+    border-radius: 5px;
+    width: 17%;
+    height: 6vh;
+    margin-top: 20px;
+    background-color: rgb(226, 61, 1);
+    display: flex;
+    align-items: center; /* Vertically centers items */
+    gap: 10px; /* Adds space between logo and text */
+    padding: 0 15px;
+}
+
+.email-logo-contact{
+    height: 20px;
+    border-radius: 20px;
+}
+
+.email-section-text{
+    color: white;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-section-body-homepage.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animations for children */
+.about-section-body-homepage.fade-in-visible .about-section-body-homepage-title-container {
+    animation: slideUpFade 0.8s ease-out 0.2s both;
+}
+
+.about-section-body-homepage.fade-in-visible .about-section-body-homepage-imgText-container {
+    animation: slideUpFade 0.8s ease-out 0.4s both;
+}
+
+.about-section-body-homepage.fade-in-visible .about-section-body-homepage-img-container {
+    animation: slideInLeft 0.8s ease-out 0.6s both;
+}
+
+.about-section-body-homepage.fade-in-visible .about-section-body-description-div {
+    animation: slideInRight 0.8s ease-out 0.8s both;
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about-section-body-homepage-title-container {
+    background-color: rgb(3, 3, 68);
+    height: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 95%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.image-portfolio-about {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.about-section-body-homepage-imgText-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    margin: 0;
+    align-items: stretch;
+    padding-top: 20px;
+}
+
+.about-section-body-homepage-img-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin-left: 40px;
+}
+
+.about-section-body-description-div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 40px;
+    margin-right: 20px;
+}
+
+.about-section-body-descriptions {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 4vh;
+    color: white;
+}
+
+.about-section-body-descriptions a {
+    display: inline-block;
+    text-decoration: underline;
+    color: #007bff;
+    position: relative;
+    top: 0;
+    vertical-align: baseline;
+    transition: color 0.3s ease;
+}
+
+.about-section-body-descriptions a:hover {
+    color: #0056b3;
+}
+
+.about-section-body-homepage-imgText-container p {
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    /* Prevent horizontal overflow globally */
+    * {
+        max-width: 100vw; /* Prevent elements from exceeding viewport width */
+    }
+    
+
+
+        .header {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: auto;
+            min-height: 60px;
+            max-height: 300px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            gap: 20px;
+            cursor: pointer;
+            font-size: 20px;
+            width: 100%;
+            overflow-x: hidden;
+        }
+    
+        .intro-body-homepage {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            padding-top: 80px; /* Add padding to push content down from header */
+        }
+    
+        .home-image-portfolio-div {
+            position: absolute;
+            top: 35%; /* Position image higher but not at the very top */
+            left: 12%; /* Position on the left side */
+            transform: translateY(0); /* Remove vertical centering */
+            z-index: 3; /* Higher z-index than text */
+            width: auto;
+            height: auto;
+        }
+        
+        .image-portfolio-intro {
+            height: 180px; /* Slightly smaller for mobile */
+            width: 180px; /* Slightly smaller for mobile */
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            border: 3px solid white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .intro-body-homepage-titlesContainer {
+            position: absolute;
+            top: 70%; /* Push text further down to make space for image */
+            left: 12%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 13px;
+            font-weight: 900;
+            z-index: 1; /* Lower z-index than image */
+            text-align: left;
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            gap: 10px;
+            width: max-content;
+           
+        }
+        
+        .intro-body-homepage-titles-one,
+        .intro-body-homepage-titles-two,
+        .intro-body-homepage-titles-three {
+            grid-column: 1;
+            margin: 0;
+            padding: 0;
+            font-size: 2.5vh;
+            white-space: nowrap;
+        }
+        
+        .intro-body-homepage-titles-one {
+            color: rgb(208, 36, 36);
+            grid-row: 1;
+            padding-left: 35%;
+        }
+        
+        .intro-body-homepage-titles-two {
+            grid-row: 2;
+        }
+        
+        .intro-body-homepage-titles-three {
+            grid-row: 3;
+            padding-left: 24%;
+        }
+        
+        .typewriter-container {
+            grid-row: 4;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            width: 200px; /* Reduced width for mobile */
+            min-width: 200px;
+            color: rgb(208, 36, 36);
+        }
+        
+        .intro-body-homepage-typed-text {
+            white-space: nowrap;
+            margin: 0;
+            margin-bottom: 10px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            font-size: 18px; /* Adjust font size for mobile */
+        }
+        
+        .home-image-container {
+            width: 100%;
+            
+            height: 100%;
+            position: relative;
+        }
+        
+        .home-image-background {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 20%;
+            position: relative;
+            z-index: 0;
+        }
+        
+    
+        
+        .intro-body-homepage-buttonContainer {
+            position: absolute;
+            top: 85%; /* Push buttons to the bottom */
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: large;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            border-radius: 20px;
+            gap: 20px; /* Reduced gap for mobile */
+            z-index: 2;
+        }
+    
+        .about-button,
+        .download-button {
+            width: 35%; /* Adjust button width for mobile */
+            padding: 15px 0; /* Adjust padding for mobile */
+            font-size: 10px; /* Adjust font size for mobile */
+        }
+    
+    
+     
+        /* ... your existing intro styles ... */
+    
+        .about-section-body-homepage {
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+        }
+    
+        .about-section-body-homepage-title-container {
+            background-color: rgb(3, 3, 68);
+            height: auto;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+    
+        .about-section-body-homepage-imgText-container {
+            display: flex;
+            flex-direction: column; /* Stack image and text vertically */
+            gap: 30px;
+            width: 100%;
+            margin: 0;
+            align-items: center;
+            padding: 0 20px;
+        }
+    
+        .about-section-body-homepage-img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            order: 1; /* Image comes first */
+        }
+    
+        .image-portfolio-about {
+            width: 100%;
+            max-height: 400px; /* Maximum height */
+            
+            max-width: 370px;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+    
+        .about-section-body-description-div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            order: 2; /* Text comes after image */
+        }
+    
+        .about-section-body-descriptions {
+            text-align: justify;
+            line-height: 1.6;
+            font-size: 15px; /* Use fixed size instead of vh for better mobile readability */
+            color: white;
+            width: 100%;
+            margin: 0;
+        }
+    
+        /* Remove any existing grid styles for about section */
+        .about-section-body-homepage-imgText-container {
+            grid-template-columns: 1fr; /* Single column layout */
+        }
+    
+        .about-section-body-homepage-title-container {
+            background-color: rgb(3, 3, 68);
+            height: 20%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 95%;
+            
+            width: 100%;
+        }
+    
+        .about-section-body-homepage-title {
+            font-size: 4vh;
+            margin: 0; 
+            padding: 0; 
+            font-weight: bold;
+        }
+    
+        .about-body-homepage-buttonContainer{
+            
+            gap: 50px;
+        }
+    
+        .skill-section-homePage {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+          margin-top: 400px; 
+        }
+    
+        .skill-image-container {
+            width: 100%;
+            
+            min-height: 1530px;
+            height: 100%;
+            position: relative;
+        }
+        
+        .home-image-background-skills {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 20%;
+            position: relative;
+            z-index: 0;
+        }
+    
+        .skill-body-homepage-titlesContainer {
+            position: absolute;
+            top: 12%;
+            left: 50%; /* Change from 5% to 50% */
+            transform: translate(-50%, -50%); /* Change from translateY(-50%) */
+            color: white;
+            font-size: 45px;
+            font-weight: 900;
+            z-index: 1;
+            text-align: center; /* Change to center */
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            gap: 30px;
+            width: max-content;
+        }
+        
+        .skills-section-titles-one {
+            font-size: 32px;
+            margin-left: 0; /* Remove left margin */
+            text-align: center; /* Center the text */
+        }
+        
+        .skills-section-titles-two {
+            color: red;
+            font-size: 20px;
+            margin-left: 0; /* Remove left margin */
+            /* Allow text to wrap naturally */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: break-word;
+            max-width: 330px; /* Set maximum width */
+            text-align: center; /* Center the text */
+        }
+    
+        .skills-list-items{
+            display: contents; /* Allows sections to participate in the grid layout */
+            
+        }  
+        
+        .skills-list-sections {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align content to top */
+            align-items: flex-start; /* Align items to left */
+            text-align: left;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.2); /* 50% opaque white */
+            
+            min-height: 120px;
+            padding: 10px;
+        }
+        
+        .skills-list-numbers {
+            background-color: rgb(1, 1, 85);
+            color: white;
+            border-radius: 15px;
+            width: 40px; /* Use fixed width instead of percentage */
+            height: 40px; /* Use fixed height instead of percentage */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0; /* Remove any default margins */
+        }
+        
+        .skills-list-text{
+            color: white;
+            font-size: larger;
+        }
+    
+        .skills-list{
+            display: grid;
+          grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+          gap: 20px;                            
+          width: 100%;                           
+          margin: 0 auto;        
+          flex: 1;
+        }
+    
+        .speciality-section-container {
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            margin-top: auto;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    
+        .speciality-section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 900px;
+            position: relative;
+            z-index: 3;
+        }
+    
+        .speciality-list {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            width: 90%;
+            margin: 20px auto;
+            flex: 1;
+            position: relative;
+            z-index: 2; /* Above background */
+        }
+        
+        .speciality-list-sections {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            min-height: 120px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            position: relative;
+            z-index: 2; /* Above background */
+        }
+        
+        
+        .speciality-list-numbers {
+            background-color: rgb(1, 1, 85);
+            color: white;
+            border-radius: 15px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-size: 16px;
+        }
+        
+        .speciality-list-titles{
+            color: white;
+            font-size: 30px;
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .speciality-list-text {
+            color: white;
+            font-size: 25px;
+            margin: 0;
+            font-weight: 500;
+        }
+    
+        .Contact-section-body-homepage-title-container{
+            background-color: rgb(3, 3, 68);
+            height: 100%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            margin: 0 auto;
+            width: 100%;
+    
+            
+        }
+        
+        .Contact-section-body-homepage-title{
+            font-size: 4vh;
+            margin: 0; 
+            padding: 0; 
+            font-weight: bold;
+        }
+    
+    
+    
+        
+    
+    
+    
+    
+        .socials-contact-container {
+            max-width: 90%; /* Increase width for mobile */
+            min-height: auto; /* Remove fixed height */
+            margin: 0 auto;
+            padding: 20px 0; /* Add padding */
+        }
+    
+        .socials-contact-title {
+            font-size: 24px; /* Fixed size for mobile */
+            color: white;
+            text-align: center; /* Center the title */
+            margin-bottom: 30px;
+        }
+    
+        .socials-contact-sections-container {
+            min-height: auto; /* Remove fixed height */
+            display: flex;
+            flex-direction: column; /* Stack sections vertically */
+            justify-content: center;
+            align-items: center;
+            gap: 15px; /* Consistent gap between sections */
+            padding: 0;
+            margin: 0 auto;
+            width: 100%;
+        }
+    
+        .linkdin-section-socials,
+        .git-section-socials,
+        .email-section-socials {
+            width: 100%; /* Full width on mobile */
+            max-width: 280px; /* Reasonable max width */
+            height: 50px; /* Fixed height for touch targets */
+            margin-top: 0;
+            padding: 0 20px;
+            justify-content: flex-start; /* Align content to left */
+        }
+    
+        .linkdin-logo-contact,
+        .git-logo-contact,
+        .email-logo-contact {
+            height: 24px; /* Slightly larger for mobile */
+            width: 24px; /* Ensure consistent sizing */
+            flex-shrink: 0; /* Prevent logos from shrinking */
+        }
+    
+        .linkdin-section-text,
+        .git-section-text,
+        .email-section-text {
+            font-size: 16px; /* Readable font size */
+            white-space: nowrap; /* Prevent text wrapping */
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    
+        /* Contact section title optimization */
+        .Contact-section-body-homepage-title-container {
+            padding: 30px 0; /* Add more padding for mobile */
+        }
+    
+        .Contact-section-body-homepage-title {
+            font-size: 36px; /* Adjust title size for mobile */
+            text-align: center;
+            padding: 0 10px; /* Add side padding */
+        }
+
+        .work-history-title {
+            position: relative;
+            color: white;
+            font-size: 35px;
+            font-weight: 900;
+            z-index: 2;
+            text-align: center;
+            margin: 20px 0;
+            white-space: nowrap;
+            /* Remove any grid-specific positioning */
+            grid-column: unset;
+        }
+        
+        .work-list-titles {
+            color: white; /* Full opacity white */
+            font-size: 30px;
+            margin: 0;
+            font-weight: 600;
+            position: relative;
+        }
+        
+        .work-list-text {
+            color: white;
+            font-size: 15px;
+            margin: 0;
+            font-weight: 500;
+            line-height: 2;
+            width: 100%;
+            max-width: 800px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            white-space: normal;
+            position: relative; 
+        }
+    
+    
+}
+
+@media (min-width: 600px) and (max-width: 1660px) {
+
+    *{
+        max-width: 100vw; /* Prevent elements from exceeding viewport width */
+    }
+    
+
+    
+        
+    .header {
+        flex-direction: row; /* Change from column to row */
+        flex-wrap: nowrap; /* Prevent wrapping to keep items in one row */
+        justify-content: space-between; /* Space items evenly */
+        align-items: center; /* Center items vertically */
+        height: auto;
+        min-height: 60px;
+        max-height: 80px; /* Reduced max-height for horizontal layout */
+        padding: 16px 20px; /* Horizontal padding */
+        position: fixed;
+        z-index: 1;
+        gap: 20px;
+        cursor: pointer;
+        font-size: 25px;
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+        
+            .intro-body-homepage {
+                width: 100%;
+                height: 100vh;
+                position: relative;
+                padding-top: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            /* Center the image and text container */
+            .home-image-portfolio-div {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 3;
+                width: auto;
+                height: auto;
+                text-align: center;
+            }
+        
+            .image-portfolio-intro {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: center;
+                display: block;
+                border: 3px solid white;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+                margin: 0 auto;
+            }
+        
+            /* Center the titles container */
+            .intro-body-homepage-titlesContainer {
+                position: absolute;
+                top: 55%; /* Position below the image */
+                left: 50%;
+                transform: translateX(-50%);
+                color: white;
+                font-size: 13px;
+                font-weight: 900;
+                z-index: 1;
+                text-align: center;
+                display: grid;
+                grid-template-rows: auto auto auto auto;
+                gap: 10px;
+                width: max-content;
+            }
+        
+            .intro-body-homepage-titles-one,
+            .intro-body-homepage-titles-two,
+            .intro-body-homepage-titles-three {
+                grid-column: 1;
+                margin: 0;
+                padding: 0;
+                font-size: 3.5vh;
+                white-space: nowrap;
+                text-align: center;
+            }
+        
+            .intro-body-homepage-titles-one {
+                color: rgb(208, 36, 36);
+                grid-row: 1;
+            }
+        
+            .intro-body-homepage-titles-two {
+                grid-row: 2;
+            }
+        
+            .intro-body-homepage-titles-three {
+                grid-row: 3;
+            }
+        
+            .typewriter-container {
+                grid-row: 4;
+                min-height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                min-width: 200px;
+                color: rgb(208, 36, 36);
+                margin: 0 auto;
+            }
+        
+            .intro-body-homepage-typed-text {
+                white-space: nowrap;
+                margin: 0;
+                margin-bottom: 10px;
+                min-height: 60px;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                font-size: 28px;
+                justify-content: center;
+            }
+        
+            .home-image-container {
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+        
+            .home-image-background {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                opacity: 20%;
+                position: relative;
+                z-index: 0;
+            }
+        
+            .intro-body-homepage-buttonContainer {
+                position: absolute;
+                top: 95%;
+                left: 50%;
+                transform: translateX(-50%);
+                color: white;
+                font-size: large;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                border-radius: 20px;
+                gap: 20px;
+                z-index: 2;
+            }
+        
+            .about-button,
+            .download-button {
+                width: 55%;
+                padding: 15px 0;
+                font-size: 15px;
+                max-width: 200px;
+            }
+        
+            /* Rest of your existing styles remain the same */
+            .about-section-body-homepage {
+                width: 100%;
+                min-height: 100vh;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                padding: 20px 0;
+            }
+        
+            /* ... keep the rest of your existing styles as they are ... */
+        
+    
+        .about-section-body-homepage-title-container {
+            background-color: rgb(3, 3, 68);
+            height: auto;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+    
+        .about-section-body-homepage-imgText-container {
+            display: flex;
+            flex-direction: column; /* Stack image and text vertically */
+            gap: 30px;
+            width: 100%;
+            margin: 0;
+            align-items: center;
+            padding: 0 20px;
+        }
+    
+        .about-section-body-homepage-img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            order: 1; /* Image comes first */
+        }
+    
+        .image-portfolio-about {
+            width: 100%;
+            max-height: 400px; /* Maximum height */
+            
+            max-width: 370px;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+    
+        .about-section-body-description-div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            order: 2; /* Text comes after image */
+        }
+    
+        .about-section-body-descriptions {
+            text-align: justify;
+            line-height: 1.6;
+            font-size: 25px; /* Use fixed size instead of vh for better mobile readability */
+            color: white;
+            width: 100%;
+            margin: 0;
+        }
+    
+        /* Remove any existing grid styles for about section */
+        .about-section-body-homepage-imgText-container {
+            grid-template-columns: 1fr; /* Single column layout */
+        }
+    
+        .about-section-body-homepage-title-container {
+            background-color: rgb(3, 3, 68);
+            height: 20%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 95%;
+            
+            width: 100%;
+        }
+    
+        .about-section-body-homepage-title {
+            font-size: 7vh;
+            margin: 0; 
+            padding: 0; 
+            font-weight: bold;
+        }
+    
+        .about-body-homepage-buttonContainer{
+            
+            gap: 50px;
+        }
+    
+        .skill-section-homePage {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+          margin-top: 580px; 
+        }
+    
+        .skill-image-container {
+            width: 100%;
+            
+            min-height: 1530px;
+            height: 100%;
+            position: relative;
+        }
+        
+        .home-image-background-skills {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 20%;
+            position: relative;
+            z-index: 0;
+        }
+    
+        .skill-body-homepage-titlesContainer {
+            position: absolute;
+            top: 12%;
+            left: 50%; /* Change from 5% to 50% */
+            transform: translate(-50%, -50%); /* Change from translateY(-50%) */
+            color: white;
+            font-size: 45px;
+            font-weight: 900;
+            z-index: 1;
+            text-align: center; /* Change to center */
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            gap: 30px;
+            width: max-content;
+        }
+        
+        .skills-section-titles-one {
+            font-size: 32px;
+            margin-left: 0; /* Remove left margin */
+            text-align: center; /* Center the text */
+        }
+        
+        .skills-section-titles-two {
+            color: red;
+            font-size: 20px;
+            margin-left: 0; /* Remove left margin */
+            /* Allow text to wrap naturally */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: break-word;
+            max-width: 330px; /* Set maximum width */
+            text-align: center; /* Center the text */
+        }
+    
+        .skills-list-items{
+            display: contents; /* Allows sections to participate in the grid layout */
+            
+        }  
+        
+        .skills-list-sections {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align content to top */
+            align-items: flex-start; /* Align items to left */
+            text-align: left;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.2); /* 50% opaque white */
+            
+            min-height: 120px;
+            padding: 10px;
+        }
+        
+        .skills-list-numbers {
+            background-color: rgb(1, 1, 85);
+            color: white;
+            border-radius: 15px;
+            width: 40px; /* Use fixed width instead of percentage */
+            height: 40px; /* Use fixed height instead of percentage */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0; /* Remove any default margins */
+        }
+        
+        .skills-list-text{
+            color: white;
+            font-size: larger;
+        }
+    
+        .skills-list{
+            display: grid;
+          grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+          gap: 20px;                            
+          width: 100%;                           
+          margin: 0 auto;        
+          flex: 1;
+        }
+    
+        .speciality-section-container {
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            margin-top: auto;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    
+        .speciality-section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 900px;
+            position: relative;
+            z-index: 3;
+        }
+    
+        .speciality-list {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            width: 90%;
+            margin: 20px auto;
+            flex: 1;
+            position: relative;
+            z-index: 2; /* Above background */
+        }
+        
+        .speciality-list-sections {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            min-height: 120px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            position: relative;
+            z-index: 2; /* Above background */
+        }
+        
+        
+        .speciality-list-numbers {
+            background-color: rgb(1, 1, 85);
+            color: white;
+            border-radius: 15px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-size: 16px;
+        }
+        
+        .speciality-list-titles{
+            color: white;
+            font-size: 30px;
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .speciality-list-text {
+            color: white;
+            font-size: 25px;
+            margin: 0;
+            font-weight: 500;
+        }
+    
+        .Contact-section-body-homepage-title-container{
+            background-color: rgb(3, 3, 68);
+            height: 100%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            margin: 0 auto;
+            width: 100%;
+    
+            
+        }
+        
+        .Contact-section-body-homepage-title{
+            font-size: 4vh;
+            margin: 0; 
+            padding: 0; 
+            font-weight: bold;
+        }
+    
+    
+    
+        
+    
+    
+    
+    
+        .socials-contact-container {
+            max-width: 90%; /* Increase width for mobile */
+            min-height: auto; /* Remove fixed height */
+            margin: 0 auto;
+            padding: 20px 0; /* Add padding */
+        }
+    
+        .socials-contact-title {
+            font-size: 24px; /* Fixed size for mobile */
+            color: white;
+            text-align: center; /* Center the title */
+            margin-bottom: 30px;
+        }
+    
+        .socials-contact-sections-container {
+            min-height: auto; /* Remove fixed height */
+            display: flex;
+            flex-direction: row; /* Stack sections vertically */
+            justify-content: center;
+            align-items: center;
+            gap: 15px; /* Consistent gap between sections */
+            padding: 0;
+            margin: 0 auto;
+            width: 100%;
+        }
+    
+        .linkdin-section-socials,
+        .git-section-socials,
+        .email-section-socials {
+            width: 100%; /* Full width on mobile */
+            max-width: 280px; /* Reasonable max width */
+            height: 50px; /* Fixed height for touch targets */
+            margin-top: 0;
+            padding: 0 20px;
+            justify-content: flex-start; /* Align content to left */
+        }
+    
+        .linkdin-logo-contact,
+        .git-logo-contact,
+        .email-logo-contact {
+            height: 24px; /* Slightly larger for mobile */
+            width: 24px; /* Ensure consistent sizing */
+            flex-shrink: 0; /* Prevent logos from shrinking */
+        }
+    
+        .linkdin-section-text,
+        .git-section-text,
+        .email-section-text {
+            font-size: 16px; /* Readable font size */
+            white-space: nowrap; /* Prevent text wrapping */
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    
+        /* Contact section title optimization */
+        .Contact-section-body-homepage-title-container {
+            padding: 30px 0; /* Add more padding for mobile */
+        }
+    
+        .Contact-section-body-homepage-title {
+            font-size: 36px; /* Adjust title size for mobile */
+            text-align: center;
+            padding: 0 10px; /* Add side padding */
+        }
+        
+        
+
+}
+
+
+@media (min-width: 700px) and (max-width: 1660px) {
+    .about-button,
+    .download-button {
+       
+        max-width: 200px;
+    }
+}
